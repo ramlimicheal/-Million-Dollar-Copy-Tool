@@ -1,0 +1,5 @@
+{
+  "name": "Million Dollar Copy Tool",
+  "description": "An AI-powered tool that analyzes any website and generates a complete Product Requirements Document (PRD) for its replication, using a sophisticated multi-agent system powered by the Gemini API.",
+  "requestFramePermissions": []
+}
