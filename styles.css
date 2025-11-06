@@ -1,0 +1,147 @@
+/* Custom styles for the generated PRD content */
+.prd-content {
+    font-family: 'Inter', sans-serif;
+    color: #d1d5db; /* gray-300 */
+    line-height: 1.65;
+    word-wrap: break-word;
+}
+
+.prd-content h1,
+.prd-content h2,
+.prd-content h3,
+.prd-content h4 {
+    color: #f9fafb; /* gray-100 */
+    font-weight: 700;
+    margin-top: 1.5em;
+    margin-bottom: 0.75em;
+}
+
+.prd-content h1 {
+    font-size: 2.25rem; /* 36px */
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #374151; /* gray-700 */
+}
+
+.prd-content h2 {
+    font-size: 1.875rem; /* 30px */
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #374151; /* gray-700 */
+}
+
+.prd-content h3 {
+    font-size: 1.5rem; /* 24px */
+}
+
+.prd-content p {
+    margin-bottom: 1em;
+}
+
+.prd-content a {
+    color: #22d3ee; /* cyan-400 */
+    text-decoration: none;
+}
+
+.prd-content a:hover {
+    text-decoration: underline;
+}
+
+.prd-content ul,
+.prd-content ol {
+    padding-left: 2em;
+    margin-bottom: 1em;
+}
+
+.prd-content li {
+    margin-bottom: 0.25em;
+}
+.prd-content ul > li::marker {
+    color: #4b5563; /* gray-600 */
+}
+
+.prd-content hr {
+    border-color: #374151; /* gray-700 */
+    margin: 2em 0;
+}
+
+.prd-content blockquote {
+    padding-left: 1em;
+    border-left: 4px solid #8b5cf6; /* purple-500 */
+    color: #e5e7eb; /* gray-200 */
+    font-style: italic;
+    margin: 1.5em 0;
+}
+
+.prd-content > div > :first-child {
+    margin-top: 0;
+}
+
+/* Code blocks and inline code */
+.prd-content code {
+    font-family: 'Fira Code', monospace;
+    font-size: 0.9em;
+}
+
+/* Inline code */
+.prd-content :not(pre) > code {
+    background-color: #374151; /* gray-700 */
+    border-radius: 0.375rem; /* rounded-md */
+    padding: 0.25rem 0.375rem;
+    color: #67e8f9; /* cyan-300 */
+    white-space: nowrap;
+}
+
+/* Fenced code blocks handled by react-syntax-highlighter */
+.prd-content pre {
+    background-color: #1f2937 !important; /* gray-800 */
+    border-radius: 0.5rem; /* rounded-lg */
+    padding: 1rem;
+    overflow-x: auto;
+    box-shadow: inset 0 2px 4px 0 rgba(0,0,0,0.2);
+}
+.prd-content pre code {
+    background-color: transparent !important;
+    padding: 0;
+    color: #d1d5db; /* gray-300 */
+    white-space: pre !important;
+}
+
+/* Tables */
+.prd-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5em 0;
+    box-shadow: 0 0 0 1px #4b5563; /* gray-600 */
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.prd-content th,
+.prd-content td {
+    border: 1px solid #374151; /* gray-700 */
+    padding: 0.75rem 1rem;
+    text-align: left;
+}
+
+.prd-content th {
+    background-color: #1f2937; /* gray-800 */
+    color: #f3f4f6; /* gray-200 */
+    font-weight: 600;
+}
+
+.prd-content tr:nth-child(even) {
+    background-color: rgba(31, 41, 55, 0.5); /* gray-800/50 */
+}
+
+/* Mermaid diagrams */
+.prd-content .language-mermaid {
+    background-color: #1f2937 !important; /* gray-800 */
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+.prd-content .language-mermaid svg {
+    max-width: 100%;
+    height: auto;
+    background-color: #1f2937 !important; /* Override mermaid inline styles */
+}
